@@ -1,4 +1,4 @@
-# offersManagement
+# offers Management
 IDE : Netbeans
 Server : Apache Tomcat : 
 Database : WebContent/WEB-INF/database/creation.sql
