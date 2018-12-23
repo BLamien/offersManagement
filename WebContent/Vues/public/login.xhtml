@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+    <h:outputStylesheet library="css" name="style.css"  />
+</h:head>
+    <h:body styleClass="background_login">
+         
+        <div class="sub_body_login"></div>  
+        <h:form>
+        <table class="tlogin">
+        <tr>
+            <td><p:graphicImage value="/resources/images/logo.png" styleClass="logo"/></td>
+        </tr>
+        <tr><td class="log_error"> 
+        <p:messages id="messages" showDetail="false" autoUpdate="true" closable="true" />          
+        </td></tr>
+        <tr>
+            <td>
+        <p:inputText id="username" value="#{userbean.cin}" required="true" requiredMessage="Saisir CIN" styleClass="input_login" />
+              <p:watermark for="username" value="CIN" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <p:password id="password" value="#{userbean.password}" required="true" requiredMessage="Saisir un mot de passe" label="password" styleClass="input_login" />
+                <p:watermark for="password" value="Mot de passe" />
+            </td>
+        </tr>
+        <tr>
+            <td><p:commandButton value="Se connecter" action="#{userbean.login()}"/></td>
+            
+        </tr>
+        <tr>
+            <td><p:commandLink value="Mot de passe oublié" styleClass="motdepasseoublie"/></td>
+        </tr>
+             </table>
+        </h:form>
+</h:body>
+</html>

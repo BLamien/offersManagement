@@ -1,0 +1,17 @@
+<ui:composition 
+                template="dossiers.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html">
+    <h:form enctype="multipart/form-data">
+             <p:dialog header="Ajouter Note" widgetVar="dlgaddnote" 
+                        modal="true" closeOnEscape="true"
+                        closable="true" resizable="false" >
+                        <p:growl id="messages" showDetail="true" />
+                        <p:fileUpload value="#{dossiersbean.note}" mode="simple"/><br/>
+                        <p:commandButton value="Atouter" ajax="false" action="#{dossiersbean.upload()}"/>
+             </p:dialog>
+    </h:form>
+</ui:composition>

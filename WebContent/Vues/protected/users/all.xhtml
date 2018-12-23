@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Les utilisateurs</title>
+        <h:outputStylesheet library="css" name="admin/admins.css" />
+        <h:outputStylesheet library="css" name="style.css" />
+        <h:outputStylesheet library="css" name="font-awesome.css"/>
+
+
+    </h:head>
+    <f:view>
+    <h:body>
+         <div class="sub_body_login"></div>
+         <div class="contain"> 
+            <ui:include src="../../template/admin_menu_top.xhtml"/>
+             <div class="right">
+        <h:form id="form_liste_users">
+            <p:dataTable  paginator="true" paginatorAlwaysVisible="true" rows="10" paginatorPosition="bottom" rowKey="#{user.cin}" var="user" value="#{adminUsers.allUtilisateurs}" id="users_table"
+                         filteredValue="#{adminUsers.filtredUtilisateurs}"  widgetVar="usersTable">
+            <!-- Header -->
+            <f:facet name="header">
+                <p:outputPanel >
+                       <h:outputLabel value="Cherche : " />
+                       <h:inputText  id="globalFilter"  onkeyup="usersTable.filter()"  />
+                       <p:watermark for="globalFilter" value="Search with a keyword" id="watermark" />
+                </p:outputPanel>
+            </f:facet>
+            <!-- Colonnes du tableau -->
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.matricule}" headerText="matricule">
+                <h:outputText value="#{user.matricule}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.cin}" headerText="cin">
+                <h:outputText value="#{user.cin}" />
+            </p:column>
+            <p:column  filterStyleClass="input-column-filter" filterBy="#{user.nom}" headerText="Nom">
+                <h:outputText value="#{user.nom}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.prenom}" headerText="Prenom">
+                <h:outputText value="#{user.prenom}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.sexe}" headerText="sexe">
+                <h:outputText value="#{user.sexe}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.situationFamiliale}" headerText="SF">
+                <h:outputText value="#{user.situationFamiliale}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.email}" headerText="Email">
+                <h:outputText value="#{user.email}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.dateNaissance}" headerText="Date de naissance">
+                <h:outputText value="#{user.dateNaissance}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.tele}" headerText="Tele">
+                <h:outputText value="#{user.tele}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.profil.libele}" headerText="Profil">
+                <h:outputText value="#{user.profil.libele}" />
+            </p:column>
+            <!--<p:column filterStyleClass="input-column-filter" filterBy="{user.password}" headerText="password">
+                <h:outputText value="{user.password}" />
+            </p:column>-->
+            <!-- button de modification -->
+            <p:column headerText="Update">
+                <p:commandLink  action="#{adminUsers.toUpdateView()}" ajax="false">
+                    <p:outputLabel value="Modifier"/>
+                    <f:setPropertyActionListener target="#{adminUsers.utilisateur}" value="#{user}"/>
+                </p:commandLink>
+            </p:column>
+            <!-- button de modification -->
+            
+            <!-- END Colonnes du tableau -->
+            </p:dataTable>
+        </h:form>
+        <br/>
+             </div>
+              <div class="left">
+                <h:form id="form2" >
+                    <ui:include src="../../template/admin_menu_left.xhtml"/>
+                </h:form>
+        </div> 
+         </div>
+    </h:body>
+    </f:view>
+</html>
+

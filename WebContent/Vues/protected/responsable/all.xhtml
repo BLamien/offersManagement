@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Responsables de dossier</title>
+        <h:outputStylesheet library="css" name="admin/archivage.css" />
+          <h:outputStylesheet library="css" name="admin/admins.css" />
+        <h:outputStylesheet library="css" name="style.css" />
+        <h:outputStylesheet library="css" name="font-awesome.css"/>
+
+    </h:head>
+        <f:view>
+         <h:body>
+ <div class="sub_body_login"></div>
+         <div class="contain"> 
+            <ui:include src="../../template/admin_menu_top.xhtml"/>
+             <div class="right">
+            <h:form id="form_admin_responsable" styleClass="form_admin form_admin_responsable">
+            <p:dataTable styleClass="dataTableAdmin table_admin_responsable" paginator="true" paginatorAlwaysVisible="false" rows="20" paginatorPosition="bottom" rowKey="#{d.idDossier}"
+                         var="d" value="#{responsableDossierAdmin.dossiers}" id="responsable_table"
+                         filteredValue="#{responsableDossierAdmin.filtredDossiers}"  widgetVar="responsableTable">
+            <!--********************************************************************************************** -->
+                <f:facet  name="header">
+                    <p:outputPanel >
+                        <h:outputLabel style="margin-left:43%; " value="Type de dossiers  : " />
+                        <p:selectOneMenu  id="listetypeDossier"
+                                          style="width: 15%;margin-right: 3%;" value="#{responsableDossierAdmin.typeDossier}">
+                            <f:selectItems  value="#{responsableDossierAdmin.typesDossiItems}" var="item" itemValue="#{item.value}" itemLabel="#{item.label}"/>
+                            <p:ajax  listener="#{responsableDossierAdmin.setDossiersOfType()}" update="@(.form_admin_responsable)"
+                                     oncomplete='responsableTable.filter();'/>
+                         </p:selectOneMenu>
+                       <h:outputLabel value="Chercher  : " />
+                       <h:inputText  id="globalFilter"  onkeyup="PF('responsableTable').filter()"  />
+                       <p:watermark for="globalFilter" value="Search with a keyword"/>
+                    </p:outputPanel>
+                </f:facet>
+            <!--********************************************************************************************** -->
+                <p:column selectionMode="single" style="width:16px;text-align:center"/>
+                <p:column filterStyleClass="input-column-filter" filterBy="#{d.idDossier}" headerText="ID">
+                    <h:outputText value="#{d.idDossier}" />
+                </p:column>
+                <p:column filterStyleClass="input-column-filter"  filterBy="#{d.dpetl.libele}" headerText="DPETL">
+                    <h:outputText value="#{d.dpetl.libele}" />
+                </p:column>
+                <p:column filterStyleClass="input-column-filter"  filterBy="#{d.dossier}" headerText="dossier">
+                    <h:outputText value="#{d.dossier}"/>
+                </p:column>
+                <p:column filterStyleClass="input-column-filter"  filterBy="#{d.dateEntree}" headerText="Date Entrée">
+                    <h:outputText value="#{d.dateEntree}" />
+                </p:column>
+                <p:column filterStyleClass="input-column-filter"  filterBy="#{d.avis.libele}" headerText="Avis">
+                    <h:outputText value="#{d.avis.libele}" />
+                </p:column>
+                <p:column filterStyleClass="input-column-filter"  filterBy="#{d.nature.libele}" headerText="Nature">
+                    <h:outputText value="#{d.nature.libele}" />
+                </p:column>
+                <p:column filterStyleClass="input-column-filter"  headerText="Responsables">
+                    <p:commandLink update="@(.form_update_responsable)" ajax="true" value="edit" onclick="PF('modelUpdateResponsables').show();">
+                        <f:setPropertyActionListener target="#{responsableDossierAdmin.dossier}" value="#{d}"/>
+                    </p:commandLink>
+                </p:column>
+            <!--********************************************************************************************** -->
+            </p:dataTable>
+        </h:form> 
+                    </div>
+              <div class="left">
+                <h:form id="form2" >
+                    <ui:include src="../../template/admin_menu_left.xhtml"/>
+                </h:form>
+        </div> 
+         </div>
+        <!--Model des responsables -->
+        <ui:include src="responsables.xhtml"/>
+      </h:body>
+    </f:view>
+</html>

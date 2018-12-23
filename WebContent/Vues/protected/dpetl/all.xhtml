@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>DPETLS</title>
+        <h:outputStylesheet library="css" name="admin/admins.css" />
+        <h:outputStylesheet library="css" name="style.css" />
+
+    </h:head>
+    <f:view>
+    <h:body>
+                 <div class="sub_body_login"></div>
+         <div class="contain"> 
+            <ui:include src="../../template/admin_menu_top.xhtml"/>
+             <div class="right">
+        <h:form id="form_liste_dpetls" styleClass="form_all_dpetl">
+            <p:dataTable paginator="true" paginatorAlwaysVisible="true" rows="10" paginatorPosition="bottom" rowKey="#{dp.idDpetl}" var="dp" 
+                         value="#{adminDpetl.allDpetls}" id="dpetl_table" 
+                         filteredValue="#{adminDpetl.filtredDpetls}"  widgetVar="dpetlsTable">
+            <!-- Header -->
+            <f:facet name="header">
+                <p:outputPanel>
+                    <p:commandButton type="button" value="Nouveau" onclick="PF('modelAddDpetl').show();" style="margin-right: 53%;" />
+                       <h:outputLabel value="Chercher dpetl : " />
+                       <h:inputText  id="globalFilter"  onkeyup="dpetlsTable.filter()"  />
+                       <p:watermark for="globalFilter" value="Search with a keyword"/>
+                </p:outputPanel>
+            </f:facet>
+            <!-- Colonnes du tableau -->
+            <p:column filterStyleClass="input-column-filter" filterBy="#{dp.idDpetl}" headerText="ID">
+                <h:outputText value="#{dp.idDpetl}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{dp.libele}" headerText="Description">
+                <h:outputText value="#{dp.libele}" />
+            </p:column>
+            <!-- button de modification -->
+            <p:column headerText="Update">
+                <p:commandButton styleClass="btnmod_adm" value="Modifier" onclick="PF('modelUpdateDpetl').show();" update="@(.form_update_dpetl)" ajax="true">
+                    <f:setPropertyActionListener target="#{adminDpetl.dpetlUpdate}" value="#{dp}"/>
+                </p:commandButton>
+            </p:column>
+            <!-- button de modification -->
+            </p:dataTable>
+        </h:form>
+        <!-- model update -->
+        <ui:include src="update.xhtml" />
+        <!-- model add -->
+        <ui:include src="add.xhtml" />
+                <br/>
+             </div>
+              <div class="left">
+                <h:form id="form2" >
+                    <ui:include src="../../template/admin_menu_left.xhtml"/>
+                </h:form>
+        </div> 
+         </div>
+    </h:body>
+    </f:view>
+</html>
+

@@ -1,0 +1,16 @@
+<ui:composition 
+                template="dossiers.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html">     
+    <ui:define name="simple_reche">        
+    <f:facet name="header">
+                <p:outputPanel styleClass="rech_panel">
+                    <h:outputText value="Recherche" styleClass="rech_label rsh" />
+                    <p:inputText id="globalFilter" styleClass="inputrecherche rsh" onkeyup="PF('dossierTable').filter()" placeholder="Rechercher ici"/>
+                </p:outputPanel>
+            </f:facet> 
+    </ui:define>
+</ui:composition>

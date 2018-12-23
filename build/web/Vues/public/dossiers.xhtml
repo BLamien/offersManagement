@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+    <h:outputStylesheet library="css" name="style.css"  />
+    <h:outputStylesheet library="css" name="font-awesome.css"/>
+
+    <script type="text/javascript" src="resources/js/fr.js"></script>
+    
+</h:head>
+    
+    <h:body> 
+         <div class="sub_body_login"></div>
+         <div class="contain"> 
+             <ui:include src="../template/menu_top.xhtml"/>
+             <div class="right">
+                    <p:outputPanel >
+                        <h:form id="form3">
+                        <p:panel styleClass="panleRechercheAv" style="display: none;">
+                        <ui:include src="../template/rechercheavancee.xhtml"/>
+                        </p:panel>
+                        </h:form>
+                    </p:outputPanel>
+                 <h:form id="form1" styleClass="formdossier">  
+                    <c:choose>
+                         <c:when test='#{dossiersbean.dossierType == 5}'>
+                            <ui:include src="dossiers/liaison.xhtml"/>
+                         </c:when>
+                         <c:when test="#{dossiersbean.dossierType == 6}">  
+                             <ui:include src="dossiers/oa.xhtml"/>
+                         </c:when>
+                         <c:when test="#{dossiersbean.dossierType == 4}">
+                             <ui:include src="dossiers/carrefour.xhtml"/>
+                         </c:when>
+                         <c:when test="#{dossiersbean.dossierType == 1}"></c:when>
+                         <c:when test="#{dossiersbean.dossierType == 2}"></c:when>
+                         <c:when test="#{dossiersbean.dossierType == 3}"></c:when>
+                     </c:choose>
+                  </h:form>
+             </div>
+             
+        <div class="left">
+                <h:form id="form2" >
+            <ui:include src="../template/menudossiers.xhtml" />
+                </h:form>
+        </div> 
+             <p:dialog header="Parametre d'affichage" widgetVar="dlgparam" 
+                        modal="true" closeOnEscape="true"
+                       closable="true" resizable="false" >  
+                 <p:selectManyCheckbox id="basic" layout="grid" columns="5" onchange="pramaffiche(this)" >
+                        <f:selectItem itemLabel="Dpetl" itemValue="dpetl"  />
+                        <f:selectItem itemLabel="Route" itemValue="route" />
+                        <f:selectItem itemLabel="Longeur" itemValue="long" />
+                        <f:selectItem itemLabel="PkD" itemValue="pkd" />
+                        <f:selectItem itemLabel="PkF" itemValue="pkf" />
+                        <f:selectItem itemLabel="Nature" itemValue="nature" />
+                        <f:selectItem itemLabel="BET" itemValue="bet" />
+                        <f:selectItem itemLabel="Responsable" itemValue="resp" />
+                        <f:selectItem itemLabel="Phase" itemValue="phase" />
+                        <f:selectItem itemLabel="D Entrée" itemValue="dentree" />
+                        <f:selectItem itemLabel="Avis" itemValue="avis" />
+                        <f:selectItem itemLabel="D Sortie" itemValue="dsortie" />
+                        <f:selectItem itemLabel="Ref Appro" itemValue="refap" />
+                        <f:selectItem itemLabel="Programmation" itemValue="prog" />
+                    </p:selectManyCheckbox>
+            </p:dialog>           
+          </div>
+         
+    <h:outputScript library="js" name="script.js" />
+    </h:body>
+</html>

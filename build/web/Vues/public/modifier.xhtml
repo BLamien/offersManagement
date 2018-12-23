@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+    <h:outputStylesheet library="css" name="style.css"  />
+    <h:outputStylesheet library="css" name="font-awesome.css"/>
+
+    <script type="text/javascript" src="resources/js/fr.js"></script>
+    
+</h:head>
+    
+    <h:body> 
+         <div class="sub_body_login detais_background"></div>
+         <div class="contain"> 
+             <ui:include src="../template/menu_top.xhtml"/>
+             <div class="right right_background">
+                <div class="menu_detail">   
+                    <p:commandLink action="#{dossiersbean.listDossiers(dossiersbean.dossierType)}" styleClass="fa fa-mail-reply operation" value="Retour"/>
+                 </div>
+                 <h:form>
+                            <p:growl id="update_Dossier_OK" showDetail="true" sticky="true" /> 
+        <table class="tlogin tajouter">
+            <tr class="ajoutertitre"><td>Modifier dossier :</td><td></td></tr>
+            <tr class="input_area">
+                <td colspan="2">
+            <h:outputText value="Dossier" /><br/>
+            <p:inputTextarea styleClass="area_add" value="#{dossiersbean.modDossier.dossier}" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <h:outputText value="DPETL" /><br/>
+                     <p:selectOneMenu styleClass="choix" value="#{dossiersbean.modDossier.dpetl}" converter="dpetlConverter"
+                        filter="true" filterMatchMode="startsWith">
+                         <f:selectItems value="#{ajouterdossierbean.dpetls}" var="dpl" 
+                                        itemLabel="#{dpl.libele}" itemValue="#{dpl}" />
+                     </p:selectOneMenu>
+                </td>
+                <td><h:outputText value="Nature"/><br/>
+                <p:selectOneMenu styleClass="choix" value="#{dossiersbean.modDossier.nature}" converter="natureConverter"
+                        filter="true" filterMatchMode="startsWith">
+                    <f:selectItems value="#{ajouterdossierbean.natures}" var="nt" 
+                                   itemLabel="#{nt.libele}" itemValue="#{nt}" />
+                </p:selectOneMenu>
+                </td>
+            </tr>
+            <c:if test="#{dossiersbean.modDossier['class'].simpleName eq 'DossierLiaison'}">
+            <tr class="forlaison">
+                <td>
+            <h:outputText value="Route"/><br/>
+            <p:inputText styleClass="input_login" value="#{dossiersbean.modDossier.route}"/>
+                </td>
+                <td>
+                <h:outputText value="Longeur"/><br/>
+                <p:inputText styleClass="input_login" value="#{dossiersbean.modDossier.longueur}"/>
+                </td>
+            </tr>
+            <tr class="forlaison">
+                <td>
+                    <h:outputText value="Point kilométrique debut"/><br/>
+                    <p:inputText styleClass="input_login" value="#{dossiersbean.modDossier.pkdebut}"/>
+                </td>
+                <td>
+                    <h:outputText value="Point kilométrique fin"/><br/>
+                    <p:inputText styleClass="input_login" value="#{dossiersbean.modDossier.pkfin}"/>
+                </td>
+            </tr>
+               
+             <tr class="forlaison">
+                <td>
+                    <h:outputText value="BET"/><br/>
+                    <p:inputText styleClass="input_login" value="#{dossiersbean.modDossier.bet}" />
+                </td>
+                <td>
+                <h:outputText value="Phase"/><br/>
+                <p:selectOneMenu styleClass="choix" value="#{dossiersbean.modDossier.phase}" converter="phaseConverter"
+                        filter="true" filterMatchMode="startsWith">
+                    <f:selectItems value="#{ajouterdossierbean.phases}" var="ph" 
+                                   itemLabel="#{ph.libele}" itemValue="#{ph}" />
+                </p:selectOneMenu>
+                </td>
+            </tr>
+             </c:if>
+             <tr >
+                <td>
+                    <h:outputText value="Date d'entrée"/><br/>
+                    <p:calendar styleClass="input_date" value="#{dossiersbean.modDossier.dateEntree}" locale="fr" /><!--<p:inputText styleClass="input_login"/>-->
+                </td>
+                <td>
+                    <h:outputText value="Date Sortie"/><br/>
+                    <p:calendar styleClass="input_date" value="#{dossiersbean.modDossier.dateSortie}" locale="fr" /><!--<p:inputText styleClass="input_login"/>-->
+                </td>
+            
+            </tr>
+            <tr >
+                <td>
+                    <h:outputText value="Programmation"/><br/>
+                    <p:inputText styleClass="input_login" value="#{dossiersbean.modDossier.programmation}" />
+                </td>
+                <td/>
+            
+            </tr>
+            <tr>
+                <td><p:commandButton value="Modifier" action="#{dossiersbean.enregistrerModification()}" update="update_Dossier_OK"/></td>
+                <td></td>
+            </tr>
+        </table> 
+        </h:form>
+             </div>
+             
+        <div class="left">
+                <h:form id="form2" >
+                    <ui:include src="../template/menudossiers.xhtml" />
+                </h:form>
+        </div> 
+          </div>
+         
+    <h:outputScript library="js" name="script.js" />
+    </h:body>
+</html>

@@ -1,0 +1,40 @@
+    <p:dialog xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets" header="Nouvelle cellule" widgetVar="modelUpdateProfil"
+      position="center" modal="true" width="40%" minimizable="false" maximizable="false">
+        <h:form styleClass="form_add form_update_profil" id="form_update_profil">
+            <table class="table_admin table_update_profil" id="update_profil_table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p:outputLabel styleClass="label_admin inline" value="Libele :"/>
+                        </td>
+                        <td>
+                            <p:inputText value="#{adminProfil.updateProfil.libele}"/>  
+                        </td>
+                    </tr>
+                    <!-- Les droits d acces -->
+                    <tr>
+                        <td>
+                            <p:outputLabel styleClass="label_admin inline" value="Droits :"/>
+                        </td>
+                        <td>
+                            <p:selectCheckboxMenu converter="#{droitConverter}" id="menuUpdateProfil" value="#{adminProfil.updateProfil.droitAcceses}" 
+                                                  label="Droits d'acces" filter="true"  filterMatchMode="contains" panelStyle="width:300px">
+                                <f:selectItems  value="#{adminProfil.allDroitAcceses}" var="d" itemValue="#{d}" itemLabel="#{d.libele}" />
+                                <f:attribute name="collectionType" value="java.util.ArrayList" />
+                            </p:selectCheckboxMenu>
+                        </td>
+                    </tr>
+                    <!-- Les droits d acces -->
+                </tbody>
+            </table>
+            <!-- Button de validation -->
+            <p:growl id="reponse" life="2000"/>
+            <p:commandButton  action="#{adminProfil.update()}" ajax="true" update="reponse @(.form_all_profil)" value="Enregistrer" />
+            <!-- Button de validation -->
+        </h:form>
+    </p:dialog>
+

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--><journalisations last_id="30">
+    <journalisation date="" id="1">
+        <user matricule="CD552879" nom="EL RHOURHA"/>
+        <description>Authentification</description>
+    </journalisation>
+<journalisation date-heure="07/06/2016 23:50:07" id="2">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Authentification</description>
+</journalisation>
+<journalisation date-heure="08/06/2016 00:00:16" id="3">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification du DPETL numéro 6</description>
+</journalisation>
+<journalisation date-heure="08/06/2016 00:04:14" id="4">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout du DPETL numéro 7</description>
+</journalisation>
+<journalisation date-heure="08/06/2016 06:47:17" id="5">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification du DPETL numéro 7</description>
+</journalisation>
+<journalisation date-heure="08/06/2016 06:48:09" id="6">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout du DPETL numéro 8</description>
+</journalisation>
+<journalisation date-heure="08/06/2016 06:48:11" id="7">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout du DPETL numéro 9</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:08:28" id="8">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification de l'utilisateur numéro cd22685</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:08:40" id="9">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification de l'utilisateur numéro cd22685</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:10:59" id="10">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification de l'utilisateur numéro cd22685</description>
+</journalisation>
+<journalisation date-heure="15/06/2016 16:02:50" id="11">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Modification"/>
+<description>Modification du DPETL numéro 1</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 19:20:50" id="12">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Ajout"/>
+<description>Ajout range d'archivage numéro  1</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:52:48" id="13">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout range d'archivage numéro  17</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 03:31:45" id="14">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification du DPETL numéro 1</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 03:35:11" id="15">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout de la cellule d'archivage numéro  null</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 03:35:32" id="16">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout de la cellule d'archivage numéro  null</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 03:37:14" id="17">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification du DPETL numéro 2</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:06:25" id="18">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout range d'archivage numéro  18</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:08:41" id="19">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification de l'utilisateur numéro cd22685</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:08:57" id="20">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification de l'utilisateur numéro cd22685</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:13:57" id="21">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout range d'archivage numéro  19</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 12:21:45" id="22">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout range d'archivage numéro  20</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 15:50:34" id="23">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout range d'archivage numéro  21</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 15:52:18" id="24">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification du DPETL numéro 1</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 15:52:29" id="25">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification du DPETL numéro 2</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 15:52:37" id="26">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout du DPETL numéro 7</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 15:52:52" id="27">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification de l'utilisateur numéro cd22685</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 16:25:37" id="28">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification de l'utilisateur numéro cd22685</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 16:25:53" id="29">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Ajout du DPETL numéro 8</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 16:26:06" id="30">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Modification"/>
+<description>Modification du DPETL numéro 8</description>
+</journalisation>
+</journalisations>

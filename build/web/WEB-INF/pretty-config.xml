@@ -1,0 +1,89 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+	<url-mapping id="login">
+		<pattern value="/login" />
+		<view-id value="Vues/public/login.xhtml" />
+	</url-mapping>
+        <url-mapping id="index">
+		<pattern value="/index" />
+		<view-id value="index.xhtml" />
+	</url-mapping>
+        
+        <url-mapping id="dossiers">
+		<pattern value="/dossiers" />
+		<view-id value="Vues/public/dossiers.xhtml" />
+	</url-mapping>
+        <url-mapping id="ajouterdossier">
+		<pattern value="/ajouterdossier" />
+		<view-id value="Vues/public/ajouterdossier.xhtml" />
+	</url-mapping>
+        
+         <url-mapping id="details">
+		<pattern value="/details" />
+		<view-id value="Vues/public/details.xhtml" />
+	</url-mapping>
+        <url-mapping id="modifier">
+		<pattern value="/modifier" />
+		<view-id value="Vues/public/modifier.xhtml" />
+	</url-mapping>
+        <url-mapping id="error-page">
+		<pattern value="/error-page" />
+		<view-id value="Vues/public/error-page.xhtml" />
+	</url-mapping>
+        <!--Utilisateur-->
+        <url-mapping id="utilisateurs">
+		<pattern value="/utilisateurs" />
+		<view-id value="Vues/protected/users/all.xhtml" />
+	</url-mapping>
+        <url-mapping id="ajouterutilisateur">
+		<pattern value="/ajouterutilisateur" />
+		<view-id value="Vues/protected/users/add.xhtml" />
+	</url-mapping>
+        <url-mapping id="modifierutilisateur">
+		<pattern value="/modifierutilisateur" />
+		<view-id value="Vues/protected/users/update.xhtml" />
+	</url-mapping>
+        <!--DPETL-->
+        <url-mapping id="ajouterdpetl">
+		<pattern value="/ajouterdpetl" />
+		<view-id value="Vues/protected/dpetl/add.xhtml" />
+	</url-mapping> 
+        <url-mapping id="dpetls">
+		<pattern value="/dpetls" />
+		<view-id value="Vues/protected/dpetl/all.xhtml" />
+	</url-mapping> 
+        <url-mapping id="modifierdpetl">
+		<pattern value="/modifierdpetl" />
+		<view-id value="Vues/protected/dpetl/update.xhtml" />
+	</url-mapping>   
+        <!--profil-->
+         <url-mapping id="ajouterprofil">
+		<pattern value="/ajouterprofil" />
+		<view-id value="Vues/protected/profil/add.xhtml" />
+	</url-mapping>   
+        <url-mapping id="ajouterprofil">
+		<pattern value="/ajouterprofil" />
+		<view-id value="Vues/protected/profil/add.xhtml" />
+	</url-mapping>  
+        <url-mapping id="profils">
+		<pattern value="/profils" />
+		<view-id value="Vues/protected/profil/all.xhtml" />
+	</url-mapping>
+        <url-mapping id="modifierprofil">
+		<pattern value="/modifierprofil" />
+		<view-id value="Vues/protected/profil/update.xhtml" />
+	</url-mapping>  
+        <url-mapping id="archivages">
+		<pattern value="/archivages" />
+		<view-id value="Vues/protected/archivage/all.xhtml" />
+	</url-mapping> 
+        <url-mapping id="responsable">
+		<pattern value="/responsable" />
+		<view-id value="Vues/protected/responsable/all.xhtml" />
+	</url-mapping>
+
+        
+</pretty-config>

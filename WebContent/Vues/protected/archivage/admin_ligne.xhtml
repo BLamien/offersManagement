@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div id="mydv" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui" style="width: 100% !important;">
+    <h:form id="form_admin_ligne" styleClass="form_admin form_admin_ligne">
+        
+        <p:dataTable  styleClass="dataTableAdmin" paginator="true" paginatorAlwaysVisible="true" rows="10" paginatorPosition="bottom" rowKey="#{r.idLigne}"
+                     var="r" value="#{archivageBean.allLignes}" id="ligne_table"
+                     filteredValue="#{archivageBean.filtredLignes}"  widgetVar="ligneTable"
+                     selection="#{archivageBean.ligneArchivage}" editable="true">
+            <!--********************************************************************************************** -->
+            <f:facet name="header">
+                <p:outputPanel>
+                    <p:commandButton type="button" value="Nouveau" onclick="PF('modelLigne').show();" style="margin-right: 40%; margin-left: 1px;" />
+                    <!-- -->
+                     <p:dialog header="Nouvelle ligne" widgetVar="modelLigne" 
+                              position="center" modal="true" width="40%" minimizable="false" maximizable="false">
+                        <h:form id="form_add_ligne">
+                            <p:growl id="growl" showDetail="false" sticky="true" />
+                            <h:panelGrid border="0" columns="2" style="margin-bottom:10px" cellpadding="5">
+                                <p:outputLabel for="ligneNum" value="Numéro de la ligne: " />
+                                <p:inputText id="ligneNum" value="#{archivageBean.addLigneArchivage.numLigne}" style="width:155px" />
+                                
+                                <p:outputLabel for="rangeList" value="Rangé : " />
+                                <p:selectOneMenu id="rangeList" converter="#{rangeConverter}" style="width: 40%;" 
+                                                 value="#{archivageBean.addRangeArchivage}"
+                                                  filter="true" filterMatchMode="contains" panelStyle="width:300px">
+                                    <f:selectItems  value="#{archivageBean.allRanges}" var="rg" itemValue="#{rg}" itemLabel="#{rg.numRange}" />
+                                </p:selectOneMenu>
+                                <f:facet name="footer">
+                                    <p:commandButton actionListener="#{archivageBean.addLigne}" ajax="true" update="@(.form_admin_ligne)" value="Save" icon="ui-icon-check" />
+                                </f:facet>
+                            </h:panelGrid>
+                        </h:form>
+                    </p:dialog>   
+                    <!-- -->
+                    
+                     <h:outputLabel value="Range : " />             
+                     <p:selectOneMenu  converter="#{rangeConverter}"
+                                       style="width: 10%; margin-right:2%;" value="#{archivageBean.rangeArchivage}">
+                         <p:ajax process="@this" listener="#{archivageBean.itemRangeSelected}" update="@(.form_admin)"/>
+                         <f:selectItems value="#{archivageBean.allRanges}" var="rrr" itemValue="#{rrr}" itemLabel="#{rrr.idRange}" /> 
+                     </p:selectOneMenu>
+                    <h:outputLabel value="Chercher  : " />
+                    <h:inputText  id="globalFilter"  onkeyup="ligneTable.filter()"  />
+                    <p:watermark for="globalFilter" value="Search with a keyword"/>
+                </p:outputPanel>
+            </f:facet>
+            <!--********************************************************************************************** -->
+            <p:column selectionMode="single" style="width:16px;text-align:center"/>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{r.idLigne}" headerText="ID">
+                <h:outputText value="#{r.idLigne}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{r.numLigne}" headerText="Numéro">
+                <p:cellEditor>
+                    <f:facet name="output">
+                        <h:outputText value="#{r.numLigne}"/>
+                    </f:facet>
+                    <f:facet name="input">
+                        <h:inputText value="#{r.numLigne}"/>
+                    </f:facet>
+                </p:cellEditor>
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{r.rangeArchivage.numRange}" headerText="Range">
+                <h:outputText value="#{r.rangeArchivage.numRange}" />
+            </p:column>
+            <p:column style="width:32px">
+                <p:rowEditor />
+            </p:column>
+            <!--********************************************************************************************** -->
+            <p:ajax event="rowEdit" listener="#{archivageBean.onRowLigneEdit}"  />
+            <p:ajax event="rowSelectRadio" listener="#{archivageBean.onRowLigneSelect}"/>
+            <!--********************************************************************************************** -->
+            </p:dataTable>
+    </h:form> 
+</div>

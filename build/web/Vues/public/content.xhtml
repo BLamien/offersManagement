@@ -1,0 +1,70 @@
+<ui:composition 
+                template="dossiers.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html">
+<h:form>
+           <p:dataTable var="dossier" widgetVar="dossierTable" id="dossierTable" value="#{dossiersbean.dossiers}" 
+                  styleClass="DataTable" paginator="true" rows="10"  paginatorPosition="bottom">
+    
+        <f:facet name="header">
+            <p:outputPanel >
+                         
+                                <p:panel styleClass="panleRechercheAv" style="display: none;">
+                                <ui:include src="rechercheavancee.xhtml"/>
+                                </p:panel>
+           </p:outputPanel>
+        </f:facet>    
+    <p:column headerText="DPETL">
+        <h:outputText value="" />
+    </p:column>
+ 
+    <p:column headerText="Route">
+        <h:outputText value="" />
+    </p:column>
+ 
+    <p:column headerText="Dossier">
+        <h:outputText value="#{dossier.dossier}" />
+    </p:column>
+ 
+    <p:column headerText="Long">
+        <h:outputText value="" />
+    </p:column>
+    <p:column headerText="PkD">
+        <h:outputText value="" />
+    </p:column>
+    <p:column headerText="PkF">
+        <h:outputText value="" />
+    </p:column>
+    <p:column headerText="Nature">
+        <h:outputText value="" />
+    </p:column>
+    <p:column headerText="BET">
+        <h:outputText value="" />
+    </p:column>
+    <p:column headerText="Resp">
+        <h:outputText value="" />
+    </p:column>
+    <p:column headerText="Phase">
+        <h:outputText value="" />
+    </p:column>
+    <p:column headerText="D Entrée">
+        <h:outputText value="" />
+    </p:column>
+    <p:column headerText="Avis">
+        <h:outputText value="" />
+    </p:column> 
+    <p:column headerText="D Sortie">
+        <h:outputText value="" />
+    </p:column>         
+    <p:column headerText="Ref Appro">
+        <h:outputText value="" />
+    </p:column>
+    <p:column headerText="Prog">
+        <h:outputText value="" />
+    </p:column>        
+        </p:dataTable> 
+        </h:form>
+</ui:composition>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Nouveau Utilisateur</title>
+          <h:outputStylesheet library="css" name="admin/admins.css" />
+        <h:outputStylesheet library="css" name="style.css" />
+        <h:outputStylesheet library="css" name="font-awesome.css"/>
+        <script type="text/javascript" src="resources/js/fr.js"></script>
+
+    </h:head>
+    <f:view>
+    <h:body>
+          <div class="sub_body_login detais_background"></div>
+         <div class="contain"> 
+            <ui:include src="../../template/admin_menu_top.xhtml"/>
+             <div class="right">
+                <div class="menu_detail">   
+                    <p:commandLink action="utilisateurs" styleClass="fa fa-mail-reply operation" value="Retour"/>
+               </div>
+        <h:form class="form_add" id="form_add_user">
+            <br/>
+            <table class="tlogin tajouter useradda" id="add_user_table">
+                <tr class="ajoutertitre"><td>Nouveau utilisateur :</td><td></td></tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Matricule :"/><br/>
+                            <p:inputText styleClass="input_login" value="#{adminUsers.userAdd.matricule}"/>  
+                        </td>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Cin :"/><br/>
+                            <p:inputText styleClass="input_login" value="#{adminUsers.userAdd.cin}"/>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Nom :"/><br/>
+                            <p:inputText styleClass="input_login" value="#{adminUsers.userAdd.nom}"/>  
+                        </td>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Prenom :"/><br/>
+                            <p:inputText styleClass="input_login" value="#{adminUsers.userAdd.prenom}" />   
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Date de naissance :"/><br/>
+                            <p:calendar styleClass="input_date" value="#{adminUsers.userAdd.dateNaissance}" locale="fr"/>  
+                        </td>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Sexe :"/><br/>
+                            <p:selectOneMenu styleClass="choix" value="#{adminUsers.userAdd.idSexe}" >
+                                <f:selectItem itemValue="#{adminUsers.homme.idSexe}" itemLabel="#{adminUsers.homme.value}"/>
+                                <f:selectItem  itemValue="#{adminUsers.femme.idSexe}" itemLabel="#{adminUsers.femme.value}"/>
+                            </p:selectOneMenu> 
+                        </td> 
+                    </tr> 
+                    <tr>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Email :"/><br/>
+                            <p:inputText styleClass="input_login" value="#{adminUsers.userAdd.email}"/>  
+                        </td>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Tele:"/><br/>
+                            <p:inputText styleClass="input_login" value="#{adminUsers.userAdd.tele}"/>    
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="SF :"/><br/>
+                            <p:selectOneMenu styleClass="choix" value="#{adminUsers.userAdd.idSituationFamiliale}" >
+                                <f:selectItem  itemValue="#{adminUsers.celibataire.idSituation}" itemLabel="#{adminUsers.celibataire.value}"/>
+                                <f:selectItem itemValue="#{adminUsers.mariee.idSituation}" itemLabel="#{adminUsers.mariee.value}"/>
+                            </p:selectOneMenu>  
+                        </td>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Profil :"/><br/>
+                            <p:selectOneMenu styleClass="choix"  value="#{adminUsers.userAdd.profil}" converter="#{profilConverter}">
+                                <f:selectItems value="#{adminUsers.allProfils}" var="pp" itemLabel="#{pp.libele}" itemValue="#{pp}" />
+                            </p:selectOneMenu> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p:outputLabel styleClass="label_admin" value="Password : "/><br/>
+                            <p:password styleClass="input_login" value="#{adminUsers.userAdd.password}" maxlength="20"/>    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             <!-- Button de validation -->
+                            <p:growl id="reponse" life="2000"/>
+                            <p:commandButton id="btnAddUser" actionListener="#{adminUsers.addUser()}" ajax="true" update="reponse" value="Enregistrer" />
+                            <!-- Button de validation -->   
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+           
+        </h:form>
+                              </div>
+              <div class="left">
+                <h:form id="form2" >
+                    <ui:include src="../../template/admin_menu_left.xhtml"/>
+                </h:form>
+        </div> 
+         </div>
+    </h:body>
+    </f:view>
+</html>
+

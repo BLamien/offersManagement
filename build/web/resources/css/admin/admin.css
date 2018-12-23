@@ -1,0 +1,32 @@
+.input-column-filter{
+    display: none !important;
+}
+#form_liste_users{
+ width: 100%;    
+}
+#form_liste_users table {
+ width: 700px !important; 
+}
+.form_update,.form_add{
+    width: 100%;
+    background-color: #f2f2f1;
+    border: 1px solid #b2fc88;
+}
+.form_update,.form_add table{
+    width: 100%;  
+}
+.table_admin{
+    width: 100%;
+}
+.table_admin > tbody > tr{
+    margin-bottom : 3px;
+}
+.table_admin > tbody > tr  td{
+    vertical-align : text-top;
+    background-color: #b2fc88;
+    width: 50%;
+}
+.table_admin .label_admin{
+    display: inline-block;
+    min-width: 35%;
+}

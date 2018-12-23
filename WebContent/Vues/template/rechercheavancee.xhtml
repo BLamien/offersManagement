@@ -1,0 +1,179 @@
+<ui:composition 
+                template="dossiers.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html">
+    
+   
+    <table class="trecherchepanel">
+        <tr><td><h:outputText styleClass="rtitre" value="Formulaire de recherche avancée"/></td></tr>
+        <tr class="stitre"><td colspan="3"><h:outputText value="Les mots clés"/></td></tr>
+        <tr class="htr">
+            <td><h:outputText styleClass="rlabel" value="Champs"/></td>
+            <td><h:outputText styleClass="rlabel" value="Mots clé"/></td>
+            <td><h:outputText styleClass="rlabel" value="Supprimer"/></td>
+        </tr>
+        <tr id="chfilter">
+            <td>
+                <p:selectOneMenu  styleClass="listMots" value="#{dossiersbean.cles[0]}">
+                        <f:selectItem itemLabel="Dossier" itemValue="dossier" />
+                        <f:selectItem itemLabel="Route" itemValue="route" />
+                        <f:selectItem itemLabel="Longeur" itemValue="long" />
+                        <f:selectItem itemLabel="BET" itemValue="bet" />
+                        <f:selectItem itemLabel="Reference Approbation" itemValue="refappr" /> 
+                        <f:selectItem itemLabel="Commun" itemValue="commun" />  
+                </p:selectOneMenu>     
+            </td>
+            <td><p:inputText styleClass="input_searchpanel" value="#{dossiersbean.valeurs[0]}"/></td>
+            <td></td>
+        </tr>  
+        <tr class="cloned" id="chfilter">
+            <td>
+                <p:selectOneMenu  styleClass="listMots" value="#{dossiersbean.cles[1]}">
+                        <f:selectItem itemLabel="Dossier" itemValue="dossier" />
+                        <f:selectItem itemLabel="Route" itemValue="route" />
+                        <f:selectItem itemLabel="Longeur" itemValue="long" />
+                        <f:selectItem itemLabel="BET" itemValue="bet" />
+                        <f:selectItem itemLabel="Reference Approbation" itemValue="refappr" /> 
+                        <f:selectItem itemLabel="Commun" itemValue="commun" />  
+                </p:selectOneMenu>    
+            </td>
+            <td><p:inputText styleClass="input_searchpanel" value="#{dossiersbean.valeurs[1]}"/></td>
+            <td><p:commandButton icon="ui-icon-close" styleClass="deleteMot"/></td>
+        </tr> 
+        <tr class="cloned" id="chfilter">
+            <td>
+                <p:selectOneMenu  styleClass="listMots" value="#{dossiersbean.cles[2]}">
+                        <f:selectItem itemLabel="Dossier" itemValue="dossier" />
+                        <f:selectItem itemLabel="Route" itemValue="route" />
+                        <f:selectItem itemLabel="Longeur" itemValue="long" />
+                        <f:selectItem itemLabel="BET" itemValue="bet" />
+                        <f:selectItem itemLabel="Reference Approbation" itemValue="refappr" /> 
+                        <f:selectItem itemLabel="Commun" itemValue="commun" />  
+                </p:selectOneMenu>  
+            </td>
+            <td><p:inputText styleClass="input_searchpanel" value="#{dossiersbean.valeurs[2]}"/></td>
+            <td><p:commandButton icon="ui-icon-close" styleClass="deleteMot"/></td>
+        </tr> 
+        <tr class="cloned" id="chfilter">
+            <td>
+                <p:selectOneMenu  styleClass="listMots" value="#{dossiersbean.cles[3]}">
+                        <f:selectItem itemLabel="Dossier" itemValue="dossier" />
+                        <f:selectItem itemLabel="Route" itemValue="route" />
+                        <f:selectItem itemLabel="Longeur" itemValue="long" />
+                        <f:selectItem itemLabel="BET" itemValue="bet" />
+                        <f:selectItem itemLabel="Reference Approbation" itemValue="refappr" /> 
+                        <f:selectItem itemLabel="Commun" itemValue="commun" />  
+                </p:selectOneMenu>    
+            </td>
+            <td><p:inputText styleClass="input_searchpanel" value="#{dossiersbean.valeurs[3]}"/></td>
+            <td><p:commandButton icon="ui-icon-close"/></td>
+        </tr> 
+        <tr class="cloned" id="chfilter">
+            <td>
+                <p:selectOneMenu styleClass="listMots" value="#{dossiersbean.cles[4]}">
+                        <f:selectItem itemLabel="Dossier" itemValue="dossier" />
+                        <f:selectItem itemLabel="Route" itemValue="route" />
+                        <f:selectItem itemLabel="Longeur" itemValue="long" />
+                        <f:selectItem itemLabel="BET" itemValue="bet" />
+                        <f:selectItem itemLabel="Reference Approbation" itemValue="refappr" /> 
+                        <f:selectItem itemLabel="Commun" itemValue="commun" />  
+                </p:selectOneMenu>   
+            </td>
+            <td><p:inputText styleClass="input_searchpanel" value="#{dossiersbean.valeurs[4]}"/></td>
+            <td><p:commandButton icon="ui-icon-close"/></td>
+        </tr> 
+        <tr class="cloned" id="chfilter">
+            <td>
+                <p:selectOneMenu styleClass="listMots" value="#{dossiersbean.cles[5]}">
+                        <f:selectItem itemLabel="Dossier" itemValue="dossier" />
+                        <f:selectItem itemLabel="Route" itemValue="route" />
+                        <f:selectItem itemLabel="Longeur" itemValue="long" />
+                        <f:selectItem itemLabel="BET" itemValue="bet" />
+                        <f:selectItem itemLabel="Reference Approbation" itemValue="refappr" /> 
+                        <f:selectItem itemLabel="Commun" itemValue="commun" />  
+                </p:selectOneMenu>      
+            </td>
+            <td><p:inputText styleClass="input_searchpanel" value="#{dossiersbean.valeurs[5]}"/></td>
+            <td><p:commandButton icon="ui-icon-close"/></td>
+        </tr> 
+
+        <tr class="ajouterMot"><td><p:commandLink value="+ Ajoter un mot clé"  onclick="clonMot()"/></td></tr>
+        
+        <tr class="stitre"><td colspan="3"><h:outputText value="Choix"/></td></tr>
+        <tr class="choixf">
+            <td>
+                <h:outputText value="DPETL" styleClass="rlabel"/>
+                <p:selectOneMenu styleClass="choix" value="#{dossiersbean.valeurs[6]}"  
+                        filter="true" filterMatchMode="startsWith">
+                         <f:selectItem itemLabel="Tous" itemValue="" />
+                         <f:selectItems value="#{ajouterdossierbean.dpetls}" var="dpl" 
+                                        itemLabel="#{dpl.libele}" itemValue="#{dpl.libele}" />
+                </p:selectOneMenu>
+            </td>
+            <td>
+               <h:outputText value="Nature" styleClass="rlabel"/>
+                <p:selectOneMenu styleClass="choix" value="#{dossiersbean.valeurs[7]}"
+                        filter="true" filterMatchMode="startsWith">
+                    <f:selectItem itemLabel="Toutes" itemValue="" />
+                    <f:selectItems value="#{ajouterdossierbean.natures}" var="nt" 
+                                   itemLabel="#{nt.libele}" itemValue="#{nt.libele}" />
+                </p:selectOneMenu>
+            </td>
+            <td></td>
+        </tr>
+        <tr class="choixf">
+            <td>
+                <h:outputText value="Phase" styleClass="rlabel"/>                
+                <p:selectOneMenu styleClass="choix" value="#{dossiersbean.valeurs[8]}"
+                        filter="true" filterMatchMode="startsWith">
+                    <f:selectItem itemLabel="Toutes" itemValue="" />
+                    <f:selectItems value="#{ajouterdossierbean.phases}" var="ph" 
+                                   itemLabel="#{ph.libele}" itemValue="#{ph.libele}" />
+                </p:selectOneMenu>
+            </td>
+            <td>
+               <h:outputText value="Avis" styleClass="rlabel"/> 
+                <p:selectOneMenu styleClass="choix" value="#{dossiersbean.valeurs[9]}"
+                        filter="true" filterMatchMode="startsWith">
+                     <f:selectItem itemLabel="Tous" itemValue="" />
+                     <f:selectItems value="#{ajouterdossierbean.aviss}" var="av" 
+                                    itemLabel="#{av.libele}" itemValue="#{av.libele}" />
+                </p:selectOneMenu> 
+            </td>
+            <td></td>
+        </tr>
+
+        <tr class="stitre"><td colspan="3"><h:outputText value="Filtrer sur"/></td></tr>
+        <tr>
+            <td><h:outputText value="Date d'entrée du dossier" styleClass="rlabel"/></td>
+        </tr>
+        <tr>
+            <td><h:outputText value="de" styleClass="rlabel"/>
+                <p:calendar styleClass="input_date date_search" value="#{dossiersbean.dateentreedebut}"  locale="fr" />
+            </td>
+            <td><h:outputText value="à" styleClass="rlabel"/>
+                <p:calendar styleClass="input_date date_search" value="#{dossiersbean.dateentreefin}" locale="fr" />
+            </td>
+        </tr>
+        <tr>
+            <td><h:outputText value="Date de sortie du dossier" styleClass="rlabel"/></td>
+        </tr>
+        <tr>
+            <td><h:outputText value="de" styleClass="rlabel"/>
+                <p:calendar styleClass="input_date date_search" value="#{dossiersbean.datesortiedebut}" locale="fr" />
+            </td>
+            <td><h:outputText value="à" styleClass="rlabel"/>
+                <p:calendar styleClass="input_date date_search"  value="#{dossiersbean.datesortiefin}" locale="fr" />
+            </td>
+        </tr>
+        <tr>
+            <td class="btnsearch">     
+                <p:commandButton value="Rechercher" action="#{dossiersbean.rechercheAvancee()}" update=":form1"/>
+                <p:commandButton value="Annuler" onclick="toogleRechercheAv()" />
+            </td>
+        </tr>
+    </table>
+</ui:composition>

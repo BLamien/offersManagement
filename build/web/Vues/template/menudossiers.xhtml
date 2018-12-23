@@ -1,0 +1,26 @@
+<ui:composition 
+                template="dossiers.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+        <p:menu id="m" styleClass="menu"  >
+            <p:menuitem >
+                <div class="recherchediv" >              
+                    <div class="rechercheinputdiv">
+                    </div>
+                    <p:commandLink value="Recherche Avancée" styleClass="rehercheavtoogle" onclick="toogleRechercheAv()"/> 
+                </div> 
+            </p:menuitem>
+            
+                <p:menuitem  value="Liaison routière" styleClass="itemlr" action="#{dossiersbean.listDossiers(5)}" ajax="false" />
+                <p:menuitem value="Carrefour" styleClass="itemcr" action="#{dossiersbean.listDossiers(4)}" ajax="false"  />
+                <p:menuitem value="OA" styleClass="itemoa" action="#{dossiersbean.listDossiers(6)}" ajax="false"/>
+                
+                <p:menuitem value="CPS Etude" styleClass="itemcpse" onstart="afficherLoader()" oncomplete="hideLoader()"   />
+                <p:menuitem value="CPS Travraux" styleClass="itemcpst" onstart="afficherLoader()" oncomplete="hideLoader()"   />
+                <p:menuitem value="CPS Controle" styleClass="itemcpsc" onstart="afficherLoader()" oncomplete="hideLoader()"   />
+        </p:menu>
+</ui:composition>

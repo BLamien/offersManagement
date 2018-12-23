@@ -1,0 +1,59 @@
+<ui:composition 
+                template="dossiers.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html">
+    <p:dataTable var="dossier" widgetVar="dossierTable" 
+                 value="#{dossiersbean.oa}"
+                 filteredValue="#{dossiersbean.oatmp}"
+                 rowKey="#{dossier.idDossier}"
+                 styleClass="DataTable" paginator="true" rows="10"  paginatorPosition="bottom" 
+                 emptyMessage="Pas de Dossier Liaison"
+                 id="dataDossier"
+                 selectionMode="single" 
+                 selection="#{dossiersbean.detailDossier}" 
+                 > 
+
+        <p:ajax event="rowSelect"
+            listener="#{dossiersbean.detailsDossier}" />
+                <f:facet name="header">
+                    <p:outputPanel styleClass="rech_panel">
+                        <h:outputText value="Recherche" styleClass="rech_label rsh" />
+                        <p:inputText id="globalFilter" styleClass="inputrecherche rsh" onkeyup="PF('dossierTable').filter()" placeholder="Rechercher ici"/>
+                    </p:outputPanel>
+                </f:facet> 
+                <p:column headerText="DPETL" sortBy="#{dossier.dpetl}" styleClass="dpetl" 
+                          filterBy="#{dossier.dpetl}" filterMatchMode="contains">
+                    <h:outputText value="#{dossier.dpetl}" />
+                </p:column>
+
+                 <p:column headerText="Dossier" sortBy="#{dossier.dossier}" filterBy="#{dossier.dossier}" styleClass="dossier">
+                    <h:outputText value="#{dossier.dossier} ..." />
+                </p:column>
+                <p:column headerText="Nature" sortBy="#{dossier.nature}" filterBy="#{dossier.nature}" styleClass="nature">
+                    <h:outputText value="#{dossier.nature}" />
+                </p:column>
+                 <p:column headerText="D Entrée" sortBy="#{dossier.dateEntree}" filterBy="#{dossier.dateEntree}" styleClass="dentree">
+                    <h:outputText value="#{dossier.dateEntree}" />
+                </p:column>
+                <p:column headerText="Avis" sortBy="#{dossier.avis}" filterBy="#{dossier.avis}" styleClass="avis">
+                    <h:outputText value="#{dossier.avis}" />
+                </p:column> 
+                <p:column headerText="D Sortie" sortBy="#{dossier.dateSortie}" filterBy="#{dossier.dateSortie}" styleClass="dsortie">
+                    <h:outputText value="#{dossier.dateSortie}" />
+                </p:column>         
+                <p:column headerText="Ref Appro" sortBy="#{dossier.refAppro}" filterBy="#{dossier.refAppro}" styleClass="refap">
+                    <h:outputText value="#{dossier.refAppro}" />
+                </p:column>
+                <p:column headerText="Prog" sortBy="#{dossier.programmation}" filterBy="#{dossier.programmation}" styleClass="prog">
+                    <h:outputText value="#{dossier.programmation}" />
+                </p:column> 
+                <p:column headerText="Action">
+                    <p:commandLink action="#{dossiersbean.modifierDossier(dossier)}">
+                        <i class="fa fa-pencil"></i>
+                    </p:commandLink>
+                </p:column> 
+    </p:dataTable>  
+</ui:composition>

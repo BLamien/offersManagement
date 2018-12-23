@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+
+<!-- Rechercher automatique des composants -->
+<context:component-scan base-package="pfa.beans,pfa.daoImp" />
+
+<context:annotation-config />
+
+
+<context:annotation-config />
+
+
+
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	<property name="url" value="jdbc:mysql://localhost:3306/pfa" />
+	<property name="username" value="root" />
+	<property name="password" value="" />
+</bean>
+
+
+
+<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource"/>
+		</property>
+		<property name="mappingLocations">
+                <list>
+                    <value>classpath*:pfa/model/**/*.hbm.xml</value>
+                </list>
+                </property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+			</props>
+		</property>
+</bean>
+
+<bean id="profilDao" class="pfa.daoImp.dossier.ProfilDaoImp">
+	<property name="sessionFactory">
+	<ref bean="sessionFactory"/>
+	</property>
+</bean>
+
+
+<bean id="avisDao" class="pfa.daoImp.dossier.AvisDaoImp">
+	<property name="sessionFactory">
+	<ref bean="sessionFactory"/>
+	</property>
+</bean>
+
+
+
+</beans>

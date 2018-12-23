@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+--><journalisations last_id="177">
+ 
+<journalisation date-heure="08/06/2016 06:42:26" id="7">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Authentification</description>
+</journalisation>
+<journalisation date-heure="08/06/2016 06:43:06" id="8">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Authentification</description>
+</journalisation>
+<journalisation date-heure="08/06/2016 06:47:00" id="9">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Ajout"/>
+<description>Authentification</description>
+</journalisation>
+<journalisation date-heure="10/06/2016 23:29:28" id="10">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="10/06/2016 23:40:55" id="11">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="10/06/2016 23:44:40" id="12">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="10/06/2016 23:46:29" id="13">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="10/06/2016 23:51:34" id="14">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="11/06/2016 00:14:53" id="15">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="11/06/2016 00:18:12" id="16">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="11/06/2016 00:20:54" id="17">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="11/06/2016 04:22:44" id="18">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="11/06/2016 04:26:00" id="19">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="12/06/2016 19:00:00" id="20">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="12/06/2016 19:03:01" id="21">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="12/06/2016 19:13:44" id="22">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="12/06/2016 19:31:41" id="23">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="12/06/2016 19:32:32" id="24">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:06:08" id="25">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:10:42" id="26">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:43:24" id="27">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:48:09" id="28">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:50:41" id="29">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:52:40" id="30">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 15:55:32" id="31">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 16:03:01" id="32">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 16:04:13" id="33">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 16:04:58" id="34">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 16:06:01" id="35">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="13/06/2016 16:14:05" id="36">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="15/06/2016 15:21:49" id="37">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="15/06/2016 16:17:08" id="38">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 15:15:24" id="39">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 15:35:24" id="40">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 16:29:27" id="41">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 16:36:32" id="42">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 16:39:09" id="43">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 16:47:33" id="44">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 16:55:59" id="45">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 16:59:39" id="46">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:00:46" id="47">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:02:10" id="48">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:05:03" id="49">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:06:46" id="50">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:10:13" id="51">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:11:28" id="52">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:13:07" id="53">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:24:57" id="54">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:26:32" id="55">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:29:04" id="56">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:30:55" id="57">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:32:04" id="58">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:33:11" id="59">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:34:42" id="60">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:36:10" id="61">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:38:08" id="62">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:44:12" id="63">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:46:35" id="64">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:48:55" id="65">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:50:34" id="66">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:52:42" id="67">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 17:54:14" id="68">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 18:05:19" id="69">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 18:15:44" id="70">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 18:17:30" id="71">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 18:19:54" id="72">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 18:21:12" id="73">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 18:32:42" id="74">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 18:42:55" id="75">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 18:53:42" id="76">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 18:57:11" id="77">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 19:01:13" id="78">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 19:05:01" id="79">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 19:07:34" id="80">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 19:11:35" id="81">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 19:13:52" id="82">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 19:26:13" id="83">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 19:28:56" id="84">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 22:48:53" id="85">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 22:53:40" id="86">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:10:57" id="87">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:17:02" id="88">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:18:31" id="89">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:18:38" id="90">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:20:54" id="91">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:21:17" id="92">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:23:18" id="93">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:23:41" id="94">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:48:03" id="95">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="18/06/2016 23:51:29" id="96">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:02:13" id="97">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:05:37" id="98">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:14:49" id="99">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:17:52" id="100">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:19:39" id="101">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:22:34" id="102">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:30:08" id="103">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:30:28" id="104">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:34:30" id="105">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:34:50" id="106">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:36:16" id="107">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:36:16" id="108">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 00:38:05" id="109">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:02:46" id="110">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:07:19" id="111">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:08:08" id="112">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:08:52" id="113">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:14:24" id="114">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:15:16" id="115">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:17:42" id="116">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:21:16" id="117">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:34:55" id="118">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:53:24" id="119">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 01:59:50" id="120">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:09:33" id="121">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:12:36" id="122">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:12:36" id="123">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:15:05" id="124">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:16:26" id="125">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:18:08" id="126">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:28:42" id="127">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:29:03" id="128">
+<user matricule="DR152005" nom="AMRANI" prenom="IMAD"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMRANI</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:31:00" id="129">
+<user matricule="A8658" nom="AGRAW" prenom="OUMAR"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AGRAW</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:35:09" id="130">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:36:35" id="131">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:36:36" id="132">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:38:09" id="133">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:40:44" id="134">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:48:17" id="135">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:52:01" id="136">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 02:52:02" id="137">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 03:28:06" id="138">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 03:31:25" id="139">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 03:37:03" id="140">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:02:32" id="141">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:02:35" id="142">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:03:44" id="143">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:03:46" id="144">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:05:39" id="145">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 04:13:44" id="146">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 13:21:27" id="147">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 13:22:53" id="148">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 13:23:12" id="149">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 13:25:24" id="150">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 13:34:35" id="151">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 13:40:01" id="152">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 13:41:48" id="153">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Deconnexion"/>
+<description>deconnexion de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 13:42:06" id="154">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 14:12:13" id="155">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Deconnexion"/>
+<description>deconnexion de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 14:12:25" id="156">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 14:42:28" id="157">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 15:28:38" id="158">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 15:30:16" id="159">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 15:34:44" id="160">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 16:06:38" id="161">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 16:26:09" id="162">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 16:28:57" id="163">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 16:31:02" id="164">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Deconnexion"/>
+<description>deconnexion de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 16:31:11" id="165">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 18:55:57" id="166">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="19/06/2016 19:20:58" id="167">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 12:21:17" id="168">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 12:21:18" id="169">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 12:25:29" id="170">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Deconnexion"/>
+<description>deconnexion de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 12:25:39" id="171">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 12:30:17" id="172">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Deconnexion"/>
+<description>deconnexion de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 12:33:22" id="173">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 15:42:40" id="174">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 15:43:24" id="175">
+<user matricule="cd22685" nom="AMCHAYD" prenom="Oualid"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  AMCHAYD</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 15:44:55" id="176">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+<journalisation date-heure="20/06/2016 16:22:25" id="177">
+<user matricule="cd2269" nom="EL RHOURHA" prenom="Karim"/>
+<operation type="Authentification"/>
+<description>Authentification de l'utilisateur  EL RHOURHA</description>
+</journalisation>
+</journalisations>

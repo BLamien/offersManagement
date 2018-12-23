@@ -1,0 +1,28 @@
+    <p:dialog xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets" header="Nouvelle cellule" widgetVar="modelAddDpetl"
+          position="center" modal="true" width="40%" minimizable="false" maximizable="false">
+        <h:form class="form_add form_add_dpetl" id="form_add_dpetl">
+            <table class="table_admin" id="add_dpetl_table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p:outputLabel styleClass="label_admin inline" value="Description :"/><br/>
+                            <p:inputTextarea styleClass="area_add" value="#{adminDpetl.dpetlAdd.libele}"/>  
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                         <!-- Button de validation -->
+                        <p:growl id="reponse" life="2000"/>
+                        <p:commandButton id="btnAddDpetl" actionListener="#{adminDpetl.add()}" ajax="true" update="@(.form_all_dpetl) reponse" value="Enregistrer" />
+                        <!-- Button de validation -->
+                        </td></tr>
+                </tbody>
+            </table>
+           
+        </h:form>
+        <br/>
+    </p:dialog>

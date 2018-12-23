@@ -1,0 +1,26 @@
+<ui:composition 
+                template="dossiers.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html">
+        <p:menu id="m" styleClass="menu menuadmin" >
+            <p:submenu label="Utilisateurs">
+                <p:menuitem  value="Liste des Utilisateurs" url="/utilisateurs" styleClass="itemlr" action="#{dossiersbean.listDossiers(5)}" ajax="false" />
+                <p:menuitem value="Ajouter Utilisateur" styleClass="itemcr" url="/ajouterutilisateur"/>
+            </p:submenu>
+             <p:submenu label="DPETL">
+                 <p:menuitem  value="Liste des DPETL" styleClass="itemlr" url="/dpetls" />
+            </p:submenu>
+             <p:submenu label="Profils">
+                <p:menuitem  value="Liste des profils" styleClass="itemlr" url="/profils"/>
+            </p:submenu>
+             <p:submenu label="Archivahe">
+                 <p:menuitem  value="Tous" styleClass="itemlr" url="/archivages" />
+             </p:submenu>
+             <p:submenu label="Responsables">
+                 <p:menuitem  value="Tous" styleClass="itemlr" url="/responsable" />
+            </p:submenu>
+         </p:menu>
+</ui:composition>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Archivage</title>
+        <h:outputStylesheet library="css" name="admin/admin.css" />
+        <h:outputStylesheet library="css" name="style.css" />
+
+    </h:head>
+        <f:view>
+         <h:body>
+        <div class="sub_body_login"></div>
+         <div class="contain"> 
+            <ui:include src="../../template/admin_menu_top.xhtml"/>
+             <div class="right right_archive">
+             <p:accordionPanel  id="panel_archivage"  styleClass ="panelContainer" dynamic="true" cache="false">
+                    <p:ajax event="tabChange" listener="#{archivageBean.onTabChange}"  />
+                    <p:tab  title="Administration des ranges">
+                            <ui:include src="admin_range.xhtml"/>
+                    </p:tab>
+                    <p:tab  title="Administration des lignes">
+                           <ui:include src="admin_ligne.xhtml"/>
+                    </p:tab>
+                    <p:tab title="Administration des cellules">
+                           <ui:include src="admin_colonne.xhtml"/>
+                    </p:tab>
+                </p:accordionPanel>
+             </div>
+              <div class="left">
+                <h:form id="form2" >
+                    <ui:include src="../../template/admin_menu_left.xhtml"/>
+                </h:form>
+        </div> 
+         </div>
+            </h:body>
+        </f:view>
+</html>
+

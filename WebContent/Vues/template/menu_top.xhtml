@@ -1,0 +1,33 @@
+<ui:composition 
+                template="dossiers.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:pretty="http://ocpsoft.com/prettyfaces">             
+            <div class="top_menu">     
+                <h:form id="form_menu_top">
+                <p:commandLink styleClass="bars" onclick="changeMenu()">
+                <i class="fa fa-bars"></i>
+                </p:commandLink>
+                 <div class="loginname tm_left">
+                     <div>Dossier : #{dossiersbean.typeDossier.get(dossiersbean.dossierType)}</div>
+                     <div class="separator">|</div>
+                     <pretty:link mappingId="ajouterdossier" styleClass="fa fa-folder-o ajouter_d_label"> ajouterdossier</pretty:link>
+                 </div>
+
+                 <div class="itm_param">
+                     <div class="user_loged tm_right">
+                         <div class="profil_user">#{userbean.logedUser().profil.libele.toUpperCase()}</div>
+                          <div class="separator">|</div>
+                       <p:commandLink value="#{userbean.logedUser().nom} #{userbean.logedUser().prenom}" action="#{userbean.logOut()}"/>
+                     </div>
+                     
+                     <p:commandLink styleClass="param" onclick="PF('dlgparam').show();" >
+                         <i class="fa fa-cog" aria-hidden="true"></i>
+                     </p:commandLink>
+                 </div>
+                </h:form>
+             </div>
+</ui:composition>

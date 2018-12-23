@@ -1,0 +1,51 @@
+    <p:dialog xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets" header="Responsables du dossier " widgetVar="modelUpdateResponsables"
+      position="center" modal="true" width="77%" minimizable="false" maximizable="false" >
+        <h:form styleClass="form_update_responsable" id="form_liste_users">
+    <p:dataTable paginator="true" paginatorAlwaysVisible="true" rows="10" paginatorPosition="bottom" rowKey="#{user.cin}" var="user" value="#{responsableDossierAdmin.allUtilisateurs}" id="users_table"
+                 filteredValue="#{responsableDossierAdmin.filtredUtilisateurs}"  widgetVar="responsableOfFolderTable" selection="#{responsableDossierAdmin.selectedUtilisateurs}">
+            <!-- Header -->
+            <f:facet name="header">
+                <p:outputPanel>
+                   
+                       <h:outputLabel value="Chercher un utilisateur : " />
+                       <h:inputText  id="globalFilter"  onkeyup="responsableOfFolderTable.filter()"  />
+                       <p:watermark for="globalFilter" value="Search with a keyword" id="watermark" />
+                </p:outputPanel>
+            </f:facet>
+            <!-- Colonnes du tableau -->
+            <p:column selectionMode="multiple" style="width:16px;text-align:center"/>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.matricule}" headerText="matricule">
+                <h:outputText value="#{user.matricule}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.cin}" headerText="cin">
+                <h:outputText value="#{user.cin}" />
+            </p:column>
+            <p:column  filterStyleClass="input-column-filter" filterBy="#{user.nom}" headerText="Nom">
+                <h:outputText value="#{user.nom}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.prenom}" headerText="Prenom">
+                <h:outputText value="#{user.prenom}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.email}" headerText="Email">
+                <h:outputText value="#{user.email}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.dateNaissance}" headerText="Date de naissance">
+                <h:outputText value="#{user.dateNaissance}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.tele}" headerText="Tele">
+                <h:outputText value="#{user.tele}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{user.profil.libele}" headerText="Profil">
+                <h:outputText value="#{user.profil.libele}" />
+            </p:column>
+            
+            </p:dataTable>
+            <p:growl id="growl"/>
+            <p:commandButton value="Enregistrer" ajax="true" oncomplete='responsableOfFolderTable.filter();'
+                             actionListener="#{responsableDossierAdmin.saveResponsables()}" update="growl" />
+        </h:form>
+    </p:dialog>

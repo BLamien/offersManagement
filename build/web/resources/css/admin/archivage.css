@@ -1,0 +1,28 @@
+html,body{
+    width: 100% !important;
+    height: 99% !important;
+    margin: 0px !important;
+    padding:  0px !important;
+}
+.panelContainer{
+    width: 100% !important;
+    border-radius: 2px;
+    padding: 0px !important;
+    margin: 0px !important;
+    border : none;
+    height: 100% !important;
+}
+.panelContainer .ui-accordion-content{
+    background-color: #eeeeee !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none;
+    height: 70%;
+}
+.form_admin,.form_admin .ui-datatable{
+    width: 100% !important;
+    margin: 0px !important;
+    padding:  0px !important; 
+}
+
+

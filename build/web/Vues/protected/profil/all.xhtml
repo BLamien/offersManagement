@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"       
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Profils</title>
+        <h:outputStylesheet library="css" name="style.css" />
+
+    </h:head>
+    <f:view>
+    <h:body>
+          <div class="sub_body_login"></div>
+         <div class="contain"> 
+            <ui:include src="../../template/admin_menu_top.xhtml"/>
+             <div class="right">
+           <h:form id="form_liste_profils" styleClass="form_all_profil">
+            <p:dataTable paginator="true" paginatorAlwaysVisible="true" rows="10" paginatorPosition="bottom" rowKey="#{p.idProfil}" var="p" 
+                         value="#{adminProfil.allProfils}" id="profil_table" 
+                         filteredValue="#{adminProfil.filtredProfils}"  widgetVar="profilsTable">
+            <!-- Header -->
+            <f:facet name="header">
+                <p:outputPanel >
+                       <p:commandButton value="Nouveau" onclick="PF('modelAddProfil').show();" style="margin-right: 53%;" />
+                       <h:outputLabel value="Chercher  : " />
+                       <h:inputText  id="globalFilter"  onkeyup="profilsTable.filter()"  />
+                       <p:watermark for="globalFilter" value="Search with a keyword"/>
+                </p:outputPanel>
+
+            </f:facet>
+            <!-- Colonnes du tableau -->
+            <p:column filterStyleClass="input-column-filter" filterBy="#{p.idProfil}" headerText="ID">
+                <h:outputText value="#{p.idProfil}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{p.libele}" headerText="Libele">
+                <h:outputText value="#{p.libele}" />
+            </p:column>
+            <p:column filterStyleClass="input-column-filter" filterBy="#{p.droits}" headerText="Droits">
+                <h:outputLink id="droits" value="#">
+                    <h:outputText value="#{p.droits}" /> 
+                </h:outputLink>
+                <p:tooltip id="toolTipFade" for="droits" value="#{p.droits}" />
+            </p:column>
+            <!-- button de modification -->
+            <p:column headerText="Update">
+                <p:commandButton value="modifier" onclick="PF('modelUpdateProfil').show();"  ajax="true" update="@(.form_update_profil)" >
+                    <f:setPropertyActionListener target="#{adminProfil.updateProfil}" value="#{p}"/>
+                </p:commandButton>
+            </p:column>
+            <!-- button de modification -->
+            </p:dataTable>
+        </h:form>        
+        <!-- le model d'ajout -->
+        <ui:include src="add.xhtml" />
+        <!-- le model d'ajout -->
+        <ui:include src="update.xhtml" />
+        <!-- le model d'ajout -->
+                     </div>
+              <div class="left">
+                <h:form id="form2" >
+                    <ui:include src="../../template/admin_menu_left.xhtml"/>
+                </h:form>
+        </div> 
+         </div>
+    </h:body>
+        
+        
+    </f:view>
+</html>
+

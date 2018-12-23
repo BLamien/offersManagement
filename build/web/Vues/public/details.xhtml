@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3c.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:p="http://primefaces.org/ui"
+xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+    <h:outputStylesheet library="css" name="style.css"  />
+    <h:outputStylesheet library="css" name="font-awesome.css"/>
+
+    <script type="text/javascript" src="resources/js/fr.js"></script>
+    
+</h:head>
+    
+    <h:body> 
+         <div class="sub_body_login detais_background"></div>
+         <div class="contain"> 
+             <ui:include src="../template/menu_top.xhtml"/>
+             <div class="right rightdetail">
+                 <div class="menu_detail">
+                     <p:commandLink action="#{dossiersbean.listDossiers(dossiersbean.dossierType)}" styleClass="fa fa-mail-reply operation" value="Retour"/>
+                     <c:if test="#{dossiersbean.detailDossier.avis.idAvis eq 1}">
+                     <p:commandLink action="#{dossiersbean.modifierDossier(dossiersbean.detailDossier)}" styleClass="fa fa-edit operation" value="Modifier"/>
+                     </c:if>
+                     <p:commandLink action="#" styleClass="fa fa-print operation" value="Imprimer"/>
+                     
+                     <c:if test="#{userbean.logedUser().profil.idProfil ne 1}">
+                      <c:if test="#{dossiersbean.detailDossier.avis.idAvis ne 1}">
+                     <p:commandLink action="#" styleClass="fa fa-compress operation" oncomplete="PF('dlgarchiver').show();" value="Archiver"/>
+                      </c:if>
+                     <c:if test="#{dossiersbean.detailDossier.avis.idAvis eq 1}">
+                     <p:commandLink action="#" styleClass="fa fa-gavel operation" oncomplete="PF('dlgapprouver').show();" value="Approver"/>
+                     </c:if>
+                     </c:if>
+                     <c:if test="#{dossiersbean.detailDossier.avis.idAvis eq 1}">
+                     <p:commandLink action="#" styleClass="fa fa-sticky-note-o operation" value="Ajouter Note" oncomplete="PF('dlgaddnote').show();"/>
+                     </c:if>
+                     
+                 </div>
+                           <div class="details">
+                    <table>
+                        <tr>
+                            <td colspan="3">
+                        <div class="detail_comp">
+                        <div class="title">
+                          <h:outputText value="Dossier"/>
+                        </div>
+                        <div class="cont">
+                            <h:outputText value="#{dossiersbean.detailDossier.dossier}" />
+                        </div>
+                         </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                  <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Avis"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.avis}" />
+                                </div>
+                             </div> 
+                            </td>                    
+                            <td>
+                               <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Reference d'approbation"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.refAppro}" />
+                                </div>
+                             </div>  
+                            </td>
+                            <td>
+                               <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="DPETL"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.dpetl}" />
+                                </div>
+                             </div>  
+                            </td>                   
+                        </tr>
+                        <tr>
+                            <td>
+                                  <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Date de creation"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.dateCreation}" />
+                                </div>
+                             </div> 
+                            </td>
+                            <td>
+                               <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Date d'entrée"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.dateEntree}" />
+                                </div>
+                             </div>  
+                            </td>
+                            <td>
+                                  <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Date de sortie"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.dateSortie}" />
+                                </div>
+                             </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Nature"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.nature}" />
+                                </div>
+                             </div>  
+                            </td>
+                              <td>
+                                  <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Programmetion"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.programmation}" />
+                                </div>
+                             </div> 
+                            </td>
+                             <c:if test="#{dossiersbean.detailDossier['class'].simpleName eq 'DossierLiaison'}">
+                            <td>
+                                  <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="BET"/>
+                                </div>
+                                <div class="cont">
+                                  <h:outputText value="#{dossiersbean.detailDossier.bet}" />
+                                </div>
+                             </div> 
+                            </td>  
+                             </c:if>
+                        </tr>
+            <c:if test="#{dossiersbean.detailDossier['class'].simpleName eq 'DossierLiaison'}">
+                         <tr>
+                                                         <td>
+                                  <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Route"/>
+                                </div>
+                                <div class="cont">
+                                  <h:outputText value="#{dossiersbean.detailDossier.route}" />
+                                </div>
+                             </div> 
+                            </td>
+
+                            <td>
+                                  <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Point kilométrique défaut"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.pkdebut}" />
+                                </div>
+                             </div> 
+                            </td>
+                            <td>
+                                  <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Point kilométrique fin"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.pkfin}" />
+                                </div>
+                             </div> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Longeur"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.longueur}" />
+                                </div>
+                             </div>  
+                            </td>
+                            <td>
+                                  <div class="detail_comp">
+                                <div class="title">
+                                  <h:outputText value="Phase"/>
+                                </div>
+                                <div class="cont">
+                                    <h:outputText value="#{dossiersbean.detailDossier.phase}" />
+                                </div>
+                             </div> 
+                            </td>         
+                        </tr>
+            </c:if>
+                    </table>
+    </div>
+             </div>
+             
+        <div class="left">
+                <h:form id="form2" >
+                    <ui:include src="../template/menudossiers.xhtml" />
+                </h:form>
+        </div> 
+          </div>
+                      <ui:include src="../template/approuver.xhtml" />
+                      <ui:include src="../template/addnote.xhtml"/>
+                      <ui:include src="../template/archiver.xhtml"/> 
+
+    <h:outputScript library="js" name="script.js" />
+    </h:body>
+</html>

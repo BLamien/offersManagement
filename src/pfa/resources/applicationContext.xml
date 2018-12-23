@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+<!--******************************************************************************************************-->
+<!--******************************************************************************************************-->
+<!-- Rechercher automatique des composants -->
+<context:component-scan base-package="pfa.beans,pfa.beans.converter,pfa.beans.dossier,pfa.beans.admin.users,pfa.beans.user ,
+                                      pfa.service.dossier,pfa.service.journalisation,pfa.service.users, pfa.service.archivage , 
+                                      pfa.daoImp.dossier, pfa.daoImp.archivage, pfa.daoImp.users,pfa.service.util" />
+
+<context:annotation-config />
+<!--******************************************************************************************************-->
+<!--******************************************************************************************************-->
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	<property name="url" value="jdbc:mysql://localhost:3306/pfa" />
+	<property name="username" value="root" />
+	<property name="password" value="" />
+</bean>
+<!--******************************************************************************************************-->
+<!--******************************************************************************************************-->
+<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource"/>
+		</property>
+                <property name="annotatedClasses">
+                    <list>
+                        <value>pfa.model.archivage.RangeArchivage</value>
+                        <value>pfa.model.archivage.ColonneArchivage</value>
+                        <value>pfa.model.archivage.LigneArchivage</value>
+                        <value>pfa.model.archivage.Archive</value>
+                        <value>pfa.model.archivage.ArchivageId</value>
+                        <value>pfa.model.users.Utilisateur</value>
+                        <value>pfa.model.dossier.Dossier</value>
+                        <value>pfa.model.dossier.Note</value>
+                        <value>pfa.model.dossier.LettreAppro</value>
+                        <value>pfa.model.dossier.Avis</value>
+                        <value>pfa.model.dossier.Dpetl</value>
+                        <value>pfa.model.dossier.Nature</value>
+                        <value>pfa.model.dossier.DossierCarrefour</value>
+                        <value>pfa.model.dossier.DossierLiaison</value>
+                        <value>pfa.model.dossier.DossierOa</value>
+                        <value>pfa.model.dossier.DossierCpsEtude</value>
+                        <value>pfa.model.dossier.DossierCpsTravaux</value>
+                        <value>pfa.model.dossier.DossierCpsControle</value>
+                        <value>pfa.model.users.DroitAcces</value>
+                        <value>pfa.model.users.Profil</value>
+                        <value>pfa.model.dossier.Phase</value>
+                        <value>pfa.model.dossier.DossierCps</value>
+                    </list>
+                    
+                </property>
+                <property name="packagesToScan">
+                    <list>
+                        <value>pfa.model.archivage.*</value>
+                        <value>pfa.model.dossier.*</value>
+                        <value>pfa.model.users.*</value>
+                    </list>
+                </property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+                                <!--<prop key="hibernate.hbm2ddl.auto">create</prop>-->
+                                <prop key="hibernate.enable_lazy_load_no_trans">true</prop>
+			</props>
+		</property>
+</bean>
+<!--******************************************************************************************************-->
+<!--******************************************************************************************************-->
+<!--******************************************************************************************************-->
+</beans>
