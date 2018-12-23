@@ -1,7 +1,7 @@
 # offers Management
-IDE : Netbeans
-Server : Apache Tomcat : 
-Database : WebContent/WEB-INF/database/creation.sql
-DataBase Name : pfa
-DataBase username : root
-DataBase password :
+IDE : Netbeans<br>
+Server : Apache Tomcat : <br>
+Database : WebContent/WEB-INF/database/creation.sql<br>
+DataBase Name : pfa<br>
+DataBase username : root<br>
+DataBase password :<br>
